@@ -40,7 +40,70 @@ int main()
         std::cin >> num1 >> num2;
         std::cout << "Their sum is " << (num1 + num2) << std::endl;
       }
+      else
+      {
+        if (user_input == 2)
+        {
+          std::cout << "Enter two numbers\n";
+          std::cin >> num1 >> num2;
+          std::cout << "Their difference is " << (num1 - num2) << std::endl;
+        }
+        else
+        {
+          if (user_input == 3)
+          {
+            std::cout << "Enter two numbers\n";
+            std::cin >> num1 >> num2;
+            std::cout << "The product is " << (num1 * num2) << std::endl;
+          }
+          else
+          {
+            if (user_input == 4)
+            {
+              std::cout << "Enter two numbers\n";
+              std::cin >> numerator >> denominator;
+
+              if (denominator == 0)
+              {
+                std::cout << "error: undefined\n";
+              }
+              else
+              {
+                 std::cout << "The quotient is " << (numerator % denominator) << std::endl;
+              }
+            }
+            else
+            {
+              if (user_input == 5)
+              {
+                std::cout << "Enter a number\n";
+                std::cin >> num1;
+              
+                if (num1 < 0)
+                {
+                  std::cout << "Error: cannot take the square root of a negative number\n";
+                }
+                else
+                {
+                  std::cout << "The sqaure root of " << num1 << " is " << sqrt(num1) << std::endl;
+                }
+
+              }
+              else
+              {
+                if (user_input != 99)
+                {
+                  std::cout << "Invalid input, please enter something else.\n";
+
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
+
+  std::cout << "Goodbye!\n";
   return 0;
 }
